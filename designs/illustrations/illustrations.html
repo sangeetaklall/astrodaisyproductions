@@ -21,31 +21,37 @@
     <body id="stretch">
         <div class="buttons-center">
             <div class="button">
+                <a href="../../home/home.html">Home</a> <!--- Latest stuff --->
                 <a href="../../about/about.html">About</a> <!--- About me + timeline with experience --->
                 <a href="../../blog/blog.html">Blog</a> <!--- stuff I find interesting --->
                     <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Designs</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="../3dart.html">3D Art</a>
-                        <a href="../animations.html">Animations</a>
-                        <a href="../illustrations.html">Illustrations</a>
-                        <a href="../intart.html">Interactive Art</a>
-                        <a href="../uiux/uiux.html">UI/UX</a>
-                        <a href="../web/web.html">Web Design</a>
+                    <button onclick="myFunction(1)" class="dropbtn">Designs</button>
+                    <div id="myDropdown1" class="dropdown-content">
+                     <a href="../3dart/3dart.html">3D Art</a>
+                     <a href="../concepts.html">Concepts</a>
+                     <a href="../illustrations/illustrations.html">Illustrations</a>
+                     <a href="../marketing/marketing.html">Marketing</a>
+                     <a href="../uiux/uiux.html">UI/UX</a>
+                     <a href="../web/web.html">Web Design</a>
                     </div>
-                  </div>
-                  <a href="../../concepts/concepts.html">Concepts</a> <!--- Timeline with projects --->
+                    </div>
                 <a href="../../games/games.html">Games</a> <!--- fully completed games --->
-                <a href="../../films/films.html">Films</a> <!--- Film's I've worked on & my roles --->
-                <a href="../../contact/contact.html">Contact</a> <!--- full CV of skills & contact form --->
+                    <div class="dropdown">
+                    <button onclick="myFunction(2)" class="dropbtn">Filmography</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                    <a href="../../films/films.html">Films</a> <!--- Film's I've worked on & my roles --->
+                    <a href="../../films/animations.html">Animations</a> 
+                    </div>
+                    </div>
+                <a href="../../contact/contact.html">Contact</a> <!--- fully completed games --->
                 </div>
                 </div>
 
                 <script>
                     /* When the user clicks on the button, 
                     toggle between hiding and showing the dropdown content */
-                    function myFunction() {
-                      document.getElementById("myDropdown").classList.toggle("show");
+                    function myFunction(num) {
+                      document.getElementById("myDropdown" + num).classList.toggle("show");
                     }
                     
                     // Close the dropdown if the user clicks outside of it

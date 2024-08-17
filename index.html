@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Astro Daisy Productions</title>
+        <title> Astro Daisy Productions </title>
         <!--- This is stuff to make sure the format makes sense --->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="format-detection" content="telephone=no">
@@ -21,31 +21,37 @@
     <body id="stretch">
         <div class="buttons-center">
             <div class="button">
+                <a href="home/home.html">Home</a> <!--- Latest stuff --->
                 <a href="about/about.html">About</a> <!--- About me + timeline with experience --->
                 <a href="blog/blog.html">Blog</a> <!--- stuff I find interesting --->
                     <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Designs</button>
-                    <div id="myDropdown" class="dropdown-content">
-                     <a href="../designs/3dart.html">3D Art</a>
-                     <a href="../designs/animations.html">Animations</a>
-                    <a href="../designs/illustrations.html">Illustrations</a>
-                     <a href="../designs/intart.html">Interactive Art</a>
-                      <a href="../designs/uiux/uiux.html">UI/UX</a>
-                            <a href="../designs/web.html">Web Design</a>
+                    <button onclick="myFunction(1)" class="dropbtn">Designs</button>
+                    <div id="myDropdown1" class="dropdown-content">
+                     <a href="designs/3dart/3dart.html">3D Art</a>
+                     <a href="designs/concepts.html">Concepts</a>
+                     <a href="designs/illustrations/illustrations.html">Illustrations</a>
+                     <a href="designs/marketing/marketing.html">Marketing</a>
+                     <a href="designs/uiux/uiux.html">UI/UX</a>
+                     <a href="designs/web/web.html">Web Design</a>
                     </div>
-                  </div>
-                  <a href="concepts/concepts.html">Concepts</a> <!--- Timeline with projects --->
+                    </div>
                 <a href="games/games.html">Games</a> <!--- fully completed games --->
-                <a href="films/films.html">Films</a> <!--- Film's I've worked on & my roles --->
-                <a href="contact/contact.html">Contact</a> <!--- full CV of skills & contact form --->
+                    <div class="dropdown">
+                    <button onclick="myFunction(2)" class="dropbtn">Filmography</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                    <a href="films/films.html">Films</a> <!--- Film's I've worked on & my roles --->
+                    <a href="films/animations.html">Animations</a> 
+                    </div>
+                    </div>
+                <a href="contact/contact.html">Contact</a> <!--- fully completed games --->
                 </div>
                 </div>
 
                 <script>
                     /* When the user clicks on the button, 
                     toggle between hiding and showing the dropdown content */
-                    function myFunction() {
-                      document.getElementById("myDropdown").classList.toggle("show");
+                    function myFunction(num) {
+                      document.getElementById("myDropdown" + num).classList.toggle("show");
                     }
                     
                     // Close the dropdown if the user clicks outside of it
@@ -248,7 +254,7 @@
  <footer>
                     <div class="footer-inside">
                         <div class="footer-text">
-                            <p>Content Copyright &#169; 2022 Astro Daisy Productions</p>
+                            <p>Content Copyright &#169; 2024 Astro Daisy Productions</p>
                             <p>LCARS Inspired Website Template designed &amp; developed by Jim Robertus <a href="https://www.thelcars.com">www.TheLCARS.com</a>.</p>
                         </div>
                         <div class="buttons-center">
